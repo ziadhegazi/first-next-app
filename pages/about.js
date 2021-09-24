@@ -1,29 +1,23 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/dist/client/link";
+import React from "react";
 
-const Home = () => {
-    const { title, text, btn } = styles;
-
+const About = () => {
     return (
         <div>
-            <h1 className={title}>Homepage</h1>
-            <p className={text}>
+            <h1>About</h1>
+            <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis in, maiores quaerat consequuntur ut odit mollitia
                 laborum deleniti repellendus a minus delectus sequi nihil
                 placeat aliquam nulla temporibus! Ratione, dolore.
             </p>
-            <p className={text}>
+            <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Blanditiis in, maiores quaerat consequuntur ut odit mollitia
                 laborum deleniti repellendus a minus delectus sequi nihil
                 placeat aliquam nulla temporibus! Ratione, dolore.
             </p>
-            <Link href="/people">
-                <a className={btn}>See all people</a>
-            </Link>
         </div>
     );
 };
 
-export default Home;
+export default About;
