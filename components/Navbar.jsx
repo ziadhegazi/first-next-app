@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
     return (
         <nav>
             <div className="logo">
-                <h1>Hegazi</h1>
+                <Image
+                    src="/ZH style 2 WIP3pdf.jpg"
+                    width={70}
+                    height={70}
+                    alt="logo"
+                />
+                {/* <h1>Hegazi</h1> */}
             </div>
             <Link href="/">
                 <a>Home</a>

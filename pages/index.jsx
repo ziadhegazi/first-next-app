@@ -1,30 +1,36 @@
-import React from "react";
-import Head from "next/dist/shared/lib/head";
+import styles from "../styles/Home.module.css";
+import Link from "next/dist/client/link";
+import Head from "next/head";
 
-const About = () => {
+const Home = () => {
+    const { title, text, btn } = styles;
+
     return (
         <>
             <Head>
-                <title>Hegazi List | About</title>
+                <title>Hegazi List | Home</title>
                 <meta name="keywords" content="People" />
             </Head>
             <div>
-                <h1>About</h1>
-                <p>
+                <h1 className={title}>Homepage</h1>
+                <p className={text}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Blanditiis in, maiores quaerat consequuntur ut odit mollitia
                     laborum deleniti repellendus a minus delectus sequi nihil
                     placeat aliquam nulla temporibus! Ratione, dolore.
                 </p>
-                <p>
+                <p className={text}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Blanditiis in, maiores quaerat consequuntur ut odit mollitia
                     laborum deleniti repellendus a minus delectus sequi nihil
                     placeat aliquam nulla temporibus! Ratione, dolore.
                 </p>
+                <Link href="/people">
+                    <a className={btn}>See all people</a>
+                </Link>
             </div>
         </>
     );
 };
 
-export default About;
+export default Home;
